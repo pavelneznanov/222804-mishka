@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Незнанов](https://up.htmlacademy.ru/adaptive/10/user/222804).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Соколовская](https://htmlacademy.ru/profile/id106311).
 
 ---
 
