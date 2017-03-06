@@ -2,19 +2,94 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Мишка — Каталог продукции</title>
   </head>
   <body>
 <!--    HEADER CONTAINER-->
-    <header>
-
+    <header class="page-header">
+      <a class="page-header__logo" href="#" title="На главную">
+        <img src="http://placehold.it/86x35" alt="Интернет-магазин «Мишка»">
+      </a>
+      <ul class="page-header__menu">
+        <div class="page-header__burger-icon">
+          <a href="#" title="Меню">Меню</a>
+        </div>
+        <li class="page-header__menu-item">
+          <a href="#" title="Главная">Главная</a>
+        </li>
+        <li class="page-header__menu-item">
+          <a href="#" title="Каталог">Каталог</a>
+        </li>
+        <li class="page-header__menu-item">
+          <a href="#" title="Контакты">Контакты</a>
+        </li>
+      </ul>
     </header>
 <!--    MAIN CONTAINER-->
     <main>
-
+      <!-- inner title -->
+      <section class="inner-header">
+        <h1>Каталог товаров</h1>
+      </section>
+      <!-- inner items list -->
+      <section class="inner-list">
+        <ul class="inner-list__item">
+          <li>
+            <a href="#" title="Зайчик-попрыгайчик"><img src="http://placehold.it/260x195"></a>
+            <p class="inner-list__title">Зайчик-попрыгайчик</p>
+            <p class="inner-list__description">Рост 30 см, вес 200 г</p>
+            <hr>
+            <p class="inner-list__price">1 200 руб.</p>
+            <a href="#" title="Добавить в корзину"><img src="http://placehold.it/20x20"></a>
+          </li>
+          <li>
+            <a href="#" title="Корзинка для белья"><img src="http://placehold.it/260x195"></a>
+            <p class="inner-list__title">Корзинка для белья</p>
+            <p class="inner-list__description">Диаметр 15 см, высота 10 см</p>
+            <hr>
+            <p class="inner-list__price">690 руб.</p>
+            <a href="#" title="Добавить в корзину"><img src="http://placehold.it/20x20"></a>
+          </li>
+          <li>
+            <a href="#" title="Большая корзинка для игрушек"><img src="http://placehold.it/260x195"></a>
+            <p class="inner-list__title">Большая корзинка для игрушек</p>
+            <p class="inner-list__description">Диаметр 30 см, высота 30 см</p>
+            <hr>
+            <p class="inner-list__price">690 руб.</p>
+            <a href="#" title="Добавить в корзину"><img src="http://placehold.it/20x20"></a>
+          </li>
+          <!-- video -->
+          <li class="inner-list__video">
+            <img class="inner-list_video-cover" src="http://placehold.it/60x60">
+            <p class="inner-list__title">Процесс производства</p>
+            <a href="#" title="Процесс производства"><img src="http://placehold.it/260x195"></a>
+            <p class="inner-list__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a href="btn inner-list__btn" title="Сделать заказ">Сделать заказ</a>
+          </li>
+        </ul>
+      </section>
     </main>
 <!--    FOOTER CONTAINER-->
-    <footer>
+    <footer class="page-footer">
+      <!-- social links -->
+      <div class="page-footer__social-list">
+        <a class="page-footer__social-item" href="#" title="Мы в инстаграме">
+          <img src="http://placehold.it/40x40" alt="Мы в инстаграме">
+        </a>
+        <a class="page-footer__social-item" href="#" title="Мы в фейсбуке">
+          <img src="http://placehold.it/40x40" alt="Мы в фейсбуке">
+        </a>
+        <a class="page-footer__social-item" href="#" title="Мы в твиттере">
+          <img src="http://placehold.it/40x40" alt="Мы в твиттере">
+        </a>
+      </div>
+      <!-- social links -->
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright-title">Разработано</p>
+        <a class="page-footer__copyright-link" href="#" title="Разработано в HTML Academy">
+          <img src="http://placehold.it/50x50" alt="HTML Academy">
+        </a>
+      </div>
     </footer>
   </body>
 </html>
