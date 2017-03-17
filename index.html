@@ -3,25 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка — Главная страница</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 <!--    HEADER CONTAINER-->
     <header class="page-header">
       <a class="page-header__logo" href="#" title="На главную">
-        <img src="http://placehold.it/86x35" width="86" height="35" alt="Интернет-магазин «Мишка»">
+        <img src="./img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
       </a>
       <ul class="page-menu">
         <li class="page-menu__burger-icon">
           <a href="#" title="Меню">Меню</a>
         </li>
-        <li class="page-menu__item">
-          <a href="#" title="Главная">Главная</a>
+        <li class="page-menu__item visually-hidden">
+          <a href="index.html" title="Главная">Главная</a>
         </li>
-        <li class="page-menu__item">
-          <a href="#" title="Каталог">Каталог</a>
+        <li class="page-menu__item visually-hidden">
+          <a href="catalog.html" title="Каталог">Каталог</a>
         </li>
-        <li class="page-menu__item">
-          <a href="#" title="Контакты">Контакты</a>
+        <li class="page-menu__item visually-hidden">
+          <a href="form.html" title="Контакты">Контакты</a>
         </li>
       </ul>
     </header>
@@ -37,13 +38,15 @@
           <header>
             <p class="category-list__title">Предметы интерьера</p>
           </header>
-          <img class="category-list__icon" src="http://placehold.it/80x80" width="80" height="80" alt="Предметы интерьера">
+          <span class="category-list__icon">
+          <img src="./img/icon-interior.svg" width="41" height="63" alt="Предметы интерьера">
+            </span>
         </article>
         <article class="category-list__item category-list__item--right">
           <header>
             <p class="category-list__title">Детские игрушки</p>
           </header>
-          <img class="category-list__icon" src="http://placehold.it/80x80" width="80" height="80"  alt="Детские игрушки">
+          <img class="category-list__icon" src="./img/icon-toy.svg" width="60" height="60"  alt="Детские игрушки">
         </article>
       </section>
       <!-- week-product section -->
@@ -67,7 +70,7 @@
             <td>15 см</td>
           </tr>
         </table>
-        <img class="week-product__item-photo" src="http://placehold.it/260x315" width="260" height="315" alt="Пряжа">
+        <img class="week-product__item-photo" src="./img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Пряжа">
         <p class="week-product_price">Цена: 990 руб.</p>
         <a class="btn week-product_btn" href="#" title="Заказать">Заказать</a>
       </section>
@@ -78,27 +81,39 @@
         </header>
         <ul class="about-us__list">
           <li class="about-us__item">
-            <img src="http://placehold.it/60x60" width="60" height="60" alt="Экологически чистые материалы">
+            <span class="about-us__item-icon">
+              <img src="./img/icon-feature-1.svg" width="32" height="37" alt="Экологически чистые материалы">
+            </span>
             <p>Экологически чистые материалы</p>
           </li>
           <li class="about-us__item">
-            <img src="http://placehold.it/60x60" width="60" height="60" alt="Скандинавский стиль по российской цене">
+            <span class="about-us__item-icon">
+              <img src="./img/icon-feature-2.svg" width="35" height="35" alt="Скандинавский стиль по российской цене">
+            </span>
             <p>Скандинавский стиль по российской цене</p>
           </li>
           <li class="about-us__item">
-            <img src="http://placehold.it/60x60" width="60" height="60" alt="Увеличивает лайки на фотографиях">
+            <span class="about-us__item-icon">
+              <img src="./img/icon-feature-3.svg" width="47" height="28" alt="Увеличивает лайки на фотографиях">
+            </span>
             <p>Увеличивает лайки на фотографиях</p>
           </li>
           <li class="about-us__item">
-            <img src="http://placehold.it/60x60" width="60" height="60" alt="Увеличивает лайки на фотографиях">
+            <span class="about-us__item-icon">
+              <img src="./img/icon-feature-4.svg" width="55" height="24" alt="Увеличивает лайки на фотографиях">
+            </span>
             <p>Увеличивает лайки на фотографиях</p>
           </li>
           <li class="about-us__item">
-            <img src="http://placehold.it/60x60" width="60" height="60" alt="Увеличивает лайки на фотографиях">
+            <span class="about-us__item-icon">
+              <img src="./img/icon-feature-5.svg" width="34" height="28" alt="Увеличивает лайки на фотографиях">
+            </span>
             <p>Увеличивает лайки на фотографиях</p>
           </li>
           <li class="about-us__item">
-            <img src="http://placehold.it/60x60" width="60" height="60" alt="Поставляется в подарочной упаковке">
+            <span class="about-us__item-icon">
+              <img src="./img/icon-feature-6.svg" width="33" height="33" alt="Поставляется в подарочной упаковке">
+            </span>
             <p>Поставляется в подарочной упаковке</p>
           </li>
         </ul>
@@ -148,20 +163,20 @@
       <!-- social links -->
       <div class="page-footer__social-list">
         <a class="page-footer__social-item" href="#" title="Мы в инстаграме">
-          <img src="http://placehold.it/40x40" width="40" height="40" alt="Мы в инстаграме">
+          <img src="./img/social-in.svg" width="21" height="21" alt="Мы в инстаграме">
         </a>
         <a class="page-footer__social-item" href="#" title="Мы в фейсбуке">
-          <img src="http://placehold.it/40x40" width="40" height="40" alt="Мы в фейсбуке">
+          <img src="./img/social-fb.svg" width="15" height="25" alt="Мы в фейсбуке">
         </a>
         <a class="page-footer__social-item" href="#" title="Мы в твиттере">
-          <img src="http://placehold.it/40x40" width="40" height="40" alt="Мы в твиттере">
+          <img src="./img/social-tw.svg" width="24" height="20" alt="Мы в твиттере">
         </a>
       </div>
       <!-- social links -->
       <div class="page-footer__copyright">
         <p class="page-footer__copyright-title">Разработано</p>
         <a class="page-footer__copyright-link" href="#" title="Разработано в HTML Academy">
-          <img src="http://placehold.it/50x50" width="50" height="50" alt="HTML Academy">
+          <img src="./img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
       </div>
     </footer>

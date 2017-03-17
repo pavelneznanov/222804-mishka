@@ -1,0 +1,23 @@
+// GLOBAL STYLES
+
+@import "reset.scss";
+@import "variables.scss";
+@import "global/theme.scss";
+@import "global/fonts.scss";
+
+// BEM BLOCKS
+
+@import "blocks/page-header.scss";
+@import "blocks/page-menu.scss";
+@import "blocks/page-content.scss";
+@import "blocks/slider.scss";
+@import "blocks/page-category.scss";
+@import "blocks/category-list.scss";
+@import "blocks/week-product.scss";
+@import "blocks/about-us.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/inner-header.scss";
+@import "blocks/inner-list.scss";
+@import "blocks/order-form.scss";

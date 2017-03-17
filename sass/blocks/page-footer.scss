@@ -1,0 +1,44 @@
+/* Block — Page footer */
+
+.page-footer {
+  padding: 0 30px;
+  background-color: #f1f1f1;
+  height: 160px;
+}
+
+.page-footer__social-list {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 15px 0;
+}
+
+.page-footer__social-item {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.page-footer__copyright-title {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.page-footer__copyright-link {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+}

@@ -1,0 +1,24 @@
+/* Block — Inner list */
+
+.inner-list {
+  padding: 0 30px;
+}
+
+.inner-list__card-icon {
+  display: block;
+  width: 20px;
+  height: 19px;
+  background-image: url('../img/icon-cart.svg')
+}
+
+.inner-list__video-header {
+//  width: 60px;
+//  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-list__video-header img {
+  margin-right: 20px;
+}
