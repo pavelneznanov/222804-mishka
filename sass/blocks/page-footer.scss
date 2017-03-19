@@ -1,16 +1,32 @@
 /* Block — Page footer */
 
 .page-footer {
-  padding: 0 30px;
   background-color: #f1f1f1;
   height: 160px;
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.page-footer__wrapper {
+  width: 100%;
+  padding: 0 30px;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.page-footer__logo{
+  display: none;
+  align-items: center;
+  width: 100%;
 }
 
 .page-footer__social-list {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #e5e5e5;
-  padding: 15px 0;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  width: 100%;
 }
 
 .page-footer__social-item {
@@ -27,18 +43,85 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  margin-top: 15px;
-}
-
-.page-footer__copyright-title {
-  font-weight: bold;
-  margin-right: 15px;
+  margin-top: 25px;
+  width: 100%;
 }
 
 .page-footer__copyright-link {
   display: flex;
   justify-content: center;
-  width: 50px;
-  height: 50px;
   align-items: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+.page-footer__copyright-link svg {
+  margin-left: 30px;
+}
+
+.page-footer__social-item:hover .social-icon-in,
+.page-footer__social-item:hover .social-icon-fb,
+.page-footer__social-item:hover .social-icon-tw,
+.page-footer__logo-img:hover .footer-logo,
+.page-footer__copyright-link:hover .footer-logo-academy {
+  fill: $color-main;
+}
+
+.page-footer__social-item:active .social-icon-in,
+.page-footer__social-item:active .social-icon-fb,
+.page-footer__social-item:active .social-icon-tw,
+.page-footer__logo-img:active .footer-logo,
+.page-footer__copyright-link:active,
+.page-footer__copyright-link:active .footer-logo-academy {
+  opacity: 0.3;
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .page-footer {
+    height: 140px;
+  }
+  .page-footer__wrapper {
+    width: 668px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .page-footer__social-list {
+    border-bottom: none;
+    align-items: center;
+    padding: 0;
+  }
+  .page-footer__copyright {
+    margin-top: 0;
+    justify-content: flex-end;
+  }
+  .page-footer__logo{
+    display: flex;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .page-footer {
+    height: 140px;
+  }
+  .page-footer__wrapper {
+    width: 1050px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .page-footer__social-list {
+    border-bottom: none;
+    align-items: center;
+    padding: 0;
+  }
+  .page-footer__copyright {
+    margin-top: 0;
+    justify-content: flex-end;
+  }
+  .page-footer__logo{
+    display: flex;
+  }
 }
