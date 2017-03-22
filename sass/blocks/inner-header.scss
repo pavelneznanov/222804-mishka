@@ -1,10 +1,113 @@
 /* Block — Inner header */
 
 .inner-header {
-  padding: 0 30px;
+//  padding: 0 30px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+//  justify-content: center;
+//  align-items: inherit;
   background-color: #f1f1f1;
-  height: 176px;
+  height: 180px;
+  position: relative;
+//  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-header:after {
+  content: '';
+  height: 14px;
+  width: 100%;
+//  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.inner-header__wrapper {
+//  width: 100%;
+  padding: 0 30px;
+//  display: flex;
+//  justify-content: center;
+//  flex-direction: column;
+}
+
+.inner-header__submenu {
+  height: 60px;
+//  background-color: gray;
+//  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner-header__submenu a {
+  color: #000;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 60px;
+}
+
+.inner-header__submenu a:hover {
+  opacity: 0.6;
+}
+
+.inner-header__submenu a:active {
+  opacity: 0.3;
+}
+
+.inner-header__title {
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .inner-header {
+    height: 225px;
+    align-items: flex-start;
+  }
+  .inner-header:after {
+    background-image: url('../img/inner-wave.png');
+    background-repeat: repeat-x;
+    background-size: 40px;
+    height: 9px;
+  }
+  .inner-header__wrapper {
+    width: 668px;
+    padding: 0 50px;
+  }
+  .inner-header__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 35px;
+  }
+  .inner-header__submenu {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .inner-header {
+    height: 250px;
+    align-items: flex-start;
+  }
+  .inner-header:after {
+    background-image: url('../img/inner-wave.png');
+    background-repeat: repeat-x;
+  }
+  .inner-header__wrapper {
+    width: 1050px;
+    padding: 0 50px;
+  }
+  .inner-header__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 35px;
+  }
+  .inner-header__submenu {
+    display: flex;
+  }
 }

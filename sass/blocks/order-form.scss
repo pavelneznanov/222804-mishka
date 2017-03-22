@@ -1,5 +1,26 @@
 /* Block — Order form */
 
 .order-form {
-  padding: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.order-form__wrapper {
+  width: 100%;
+  padding: 120px 30px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .order-form__wrapper {
+    width: 668px;
+    padding: 120px 50px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .order-form__wrapper {
+    width: 1050px;
+    padding: 120px 50px;
+  }
 }

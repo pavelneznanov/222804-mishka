@@ -1,7 +1,13 @@
 /* Block — Inner list */
 
 .inner-list {
-  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.inner-list__wrapper {
+  width: 100%;
+  padding: 120px 30px;
 }
 
 .inner-list__card-icon {
@@ -21,4 +27,19 @@
 
 .inner-list__video-header img {
   margin-right: 20px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .inner-list__wrapper {
+    width: 668px;
+    padding: 120px 50px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .inner-list__wrapper {
+    width: 1050px;
+    padding: 120px 50px;
+    justify-content: space-between;
+  }
 }

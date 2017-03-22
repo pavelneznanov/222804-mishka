@@ -1,23 +1,24 @@
 // GLOBAL STYLES
 
-@import "reset.scss";
-@import "variables.scss";
-@import "global/theme.scss";
-@import "global/fonts.scss";
+@import "reset";
+@import "variables";
+@import "global/theme";
+@import "global/fonts";
 
 // BEM BLOCKS
 
-@import "blocks/page-header.scss";
-@import "blocks/page-menu.scss";
-@import "blocks/page-content.scss";
-@import "blocks/slider.scss";
-@import "blocks/page-category.scss";
-@import "blocks/category-list.scss";
-@import "blocks/week-product.scss";
-@import "blocks/about-us.scss";
-@import "blocks/reviews.scss";
-@import "blocks/contacts.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/inner-header.scss";
-@import "blocks/inner-list.scss";
-@import "blocks/order-form.scss";
+@import "blocks/page-header";
+@import "blocks/page-menu";
+@import "blocks/page-content";
+@import "blocks/page-separator";
+@import "blocks/index-header";
+@import "blocks/page-category";
+@import "blocks/category-list";
+@import "blocks/week-product";
+@import "blocks/about-us";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/page-footer";
+@import "blocks/inner-header";
+@import "blocks/inner-list";
+@import "blocks/order-form";
