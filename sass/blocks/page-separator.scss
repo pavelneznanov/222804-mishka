@@ -6,7 +6,7 @@
   background-repeat: repeat-x;
 }
 
-@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media screen and (min-width: $tablet-width) {
   .page-separator {
     height: 16px;
     background-size: 38px;
