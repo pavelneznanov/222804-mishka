@@ -8,7 +8,6 @@
 .inner-list__wrapper {
   width: 100%;
   padding: 120px 30px;
-  background-color: rgba(64, 185, 0, 0.2);
 }
 
 .inner-list__card-icon {
@@ -29,8 +28,6 @@
 .inner-list__video-header img {
   margin-right: 20px;
 }
-
-
 
 @media screen and (min-width: $tablet-width) {
   .inner-list__wrapper {

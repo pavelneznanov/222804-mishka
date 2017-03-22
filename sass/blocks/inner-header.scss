@@ -30,7 +30,6 @@
 //  display: flex;
 //  justify-content: center;
 //  flex-direction: column;
-  background-color: rgba(255, 0, 0, 0.2);
 }
 
 .inner-header__submenu {
@@ -58,15 +57,12 @@
   opacity: 0.3;
 }
 
-  .inner-header__title {
-    font-size: 27px;
-    line-height: 30px;
-    text-align: center;
-    padding: 0 30px;
-  }
-
-
-
+.inner-header__title {
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 30px;
+}
 
 @media screen and (min-width: $tablet-width) {
   .inner-header {

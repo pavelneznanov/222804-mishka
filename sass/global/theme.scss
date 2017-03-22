@@ -53,7 +53,6 @@ textarea  {
   transition: 400ms;
 }
 
-
 input[type="text"]:hover,
 input[type="text"]:active,
 input[type="text"]:focus {
@@ -71,7 +70,6 @@ textarea:active,
 textarea:focus {
     border: 2px solid #62d1ba;
 }
-
 
 @media screen and (max-width: $tablet-width) {
   .hidden-s {
@@ -111,5 +109,3 @@ textarea:focus {
     overflow: hidden;
   }
 }
-
-
