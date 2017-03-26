@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover, a:active, .btn {
   transition: 400ms;
 }
 
@@ -43,11 +43,14 @@ a:hover, a:active {
 }
 
 .btn:hover {
-
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
 }
 
 .btn:active {
-
+  background-color: #444;
+  color: #8d8d8d;
 }
 
 label {
@@ -72,12 +75,23 @@ input[type="email"]  {
   font-family: 'OpenSans', Arial, sans-serif;
   outline: none;
   transition: 400ms;
-
 }
 
-input[type="text"]:placeholder {
-  color: #d2d2d2;
-  font-weight: 400;
+::-webkit-input-placeholder {
+  color: #444;
+  opacity: 0.3;
+}
+:-moz-placeholder {
+  color: #444;
+  opacity: 0.3;
+}
+::-moz-placeholder {
+  color: #444;
+  opacity: 0.3;
+}
+:-ms-input-placeholder {
+  color: #444;
+  opacity: 0.3;
 }
 
 fieldset {
@@ -87,7 +101,7 @@ fieldset {
 textarea {
   min-height: 100px;
   border: 2px solid #000;
-  padding: 15px;
+  padding: 10px 15px;
 //  margin-bottom: 20px;
   width: 100%;
   height: 140px;
@@ -108,20 +122,34 @@ textarea {
 input[type="text"]:hover,
 input[type="text"]:active,
 input[type="text"]:focus {
-    border-bottom: 2px solid #62d1ba;
+  border-bottom: 2px solid #62d1ba;
 }
 
 input[type="email"]:hover,
 input[type="email"]:active,
 input[type="email"]:focus {
-    border-bottom: 2px solid #62d1ba;
+  border-bottom: 2px solid #62d1ba;
 }
+
+input[type="radio"]:hover,
+input[type="radio"]:active,
+input[type="radio"]:focus {
+  border: 2px solid #62d1ba;
+}
+
+//.order-form__checkbox > label:after::hover,
+//.order-form__checkbox > label:after::focus {
+//  border: 2px solid #62d1ba;
+//  background-color: red;
+//}
 
 textarea:hover,
 textarea:active,
 textarea:focus {
-    border: 2px solid #62d1ba;
+  border: 2px solid #62d1ba;
 }
+
+
 
 input[type="radio"],
 input[type="checkbox"]{
@@ -182,6 +210,49 @@ input[type="checkbox"]:checked + label:before {
   width: 38px;
   height: 38px;
 }
+
+
+@media screen and (min-width: $tablet-width) {
+  label,
+  textarea,
+  input[type="text"],
+  input[type="email"], {
+    font-size: 19px;
+  }
+  input {
+    padding-left: 20px;
+  }
+  input[type="radio"] + label,
+  input[type="checkbox"] + label {
+    font-size: 19px;
+    padding-left: 80px;
+  }
+  input[type="radio"] + label:before,
+  input[type="radio"]:checked + label:before  {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: -15px;
+  }
+  input[type="checkbox"] + label:before,
+  input[type="checkbox"]:checked + label:before {
+    width: 50px;
+    height: 50px;
+    margin-top: -15px;
+  }
+  input[type="radio"] + label {
+    padding-bottom: 50px;
+  }
+  input[type="checkbox"] + label {
+    padding-bottom: 50px;
+  }
+}
+
+
+
+
+
+
 
 @media screen and (max-width: $tablet-width) {
   .hidden-s {

@@ -61,24 +61,44 @@
             </div>
           </div>
 
-          <div class="order-form__form-color">
-            <header class="order-form__subheader">
-              <div class="order-form__subheader-text">Цвет</div>
-              <hr>
-            </header>
-            <div class="order-form__content">
-              <input id="color-white" class="order-form__checkbox" type="checkbox" name="form-color" value="Белый" checked>
-              <label for="color-white">Белый</label>
-              <input id="color-gray" class="order-form__checkbox" type="checkbox" name="form-color" value="Серый" checked>
-              <label for="color-gray">Серый</label>
-              <input id="color-tiffani" class="order-form__checkbox" type="checkbox" name="form-color" value="«Тиффани»">
-              <label for="color-tiffani">«Тиффани»</label>
-              <input id="color-black" class="order-form__checkbox" type="checkbox" name="form-color" value="Черный">
-              <label for="color-black">Черный</label>
-              <input id="color-pink" class="order-form__checkbox" type="checkbox" name="form-color" value="Розовый">
-              <label for="color-pink">Розовый</label>
-              <input id="color-orange" class="order-form__checkbox" type="checkbox" name="form-color" value="Оранжевый">
-              <label for="color-orange">Оранжевый</label>
+          <div class="order-form__form-color-bg">
+            <div class="order-form__form-color">
+              <header class="order-form__subheader">
+                <div class="order-form__subheader-text">Цвет</div>
+                <hr>
+              </header>
+              <div class="order-form__content order-form__content--color">
+
+                <div class="order-form__column-checkbox">
+                  <input id="color-white" class="order-form__checkbox" type="checkbox" name="form-color" value="Белый" checked>
+                  <label for="color-white">Белый</label>
+                </div>
+
+                <div class="order-form__column-checkbox">
+                  <input id="color-gray" class="order-form__checkbox" type="checkbox" name="form-color" value="Серый" checked>
+                  <label for="color-gray">Серый</label>
+                </div>
+
+                <div class="order-form__column-checkbox">
+                  <input id="color-tiffani" class="order-form__checkbox" type="checkbox" name="form-color" value="«Тиффани»">
+                  <label for="color-tiffani">«Тиффани»</label>
+                </div>
+
+                <div class="order-form__column-checkbox">
+                  <input id="color-black" class="order-form__checkbox" type="checkbox" name="form-color" value="Черный">
+                  <label for="color-black">Черный</label>
+                </div>
+
+                <div class="order-form__column-checkbox">
+                  <input id="color-pink" class="order-form__checkbox" type="checkbox" name="form-color" value="Розовый">
+                  <label for="color-pink">Розовый</label>
+                </div>
+
+                <div class="order-form__column-checkbox">
+                  <input id="color-orange" class="order-form__checkbox" type="checkbox" name="form-color" value="Оранжевый">
+                  <label for="color-orange">Оранжевый</label>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -88,12 +108,18 @@
               <hr>
             </header>
             <div class="order-form__content">
-              <label for="form-name">Имя:</label><br>
-              <input class="order-form__input" type="text" name="form-name" id="form-name" placeholder="Введите ваше имя*" required><br>
-              <label for="form-second-name">Фамилия:</label><br>
-              <input class="order-form__input" type="text" name="form-second-name" id="form-second-name" placeholder="Укажите фамилию*" required><br>
-              <label for="form-patronymic">Отчество:</label><br>
-              <input class="order-form__input" type="text" name="form-patronymic" id="form-patronymic" placeholder="Отчество, если желаете">
+              <div class="order-form__inline-label">
+                <label for="form-name">Имя:</label>
+                <input class="order-form__input" type="text" name="form-name" id="form-name" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="order-form__inline-label">
+                <label for="form-second-name">Фамилия:</label><br>
+                <input class="order-form__input" type="text" name="form-second-name" id="form-second-name" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="order-form__inline-label">
+                <label for="form-patronymic">Отчество:</label><br>
+                <input class="order-form__input" type="text" name="form-patronymic" id="form-patronymic" placeholder="Отчество, если желаете">
+              </div>
             </div>
           </div>
 
