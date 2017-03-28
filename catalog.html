@@ -10,22 +10,29 @@
 <!--    HEADER CONTAINER-->
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html" title="На главную">
-          <img src="./img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+        <a class="page-header__logo-link" href="index.html" title="На главную">
+          <div class="page-header__logo"></div>
         </a>
-        <ul class="page-menu hidden-s hidden-m">
-          <li class="page-menu__burger-icon">
-            <a href="#" title="Меню">Иконка меню</a>
-          </li>
-          <li class="page-menu__item hidden-s">
-            <a href="catalog.html" title="Каталог">Каталог товаров</a>
-          </li>
-          <li class="page-menu__item hidden-s">
-            <a href="form.html" title="Контакты">Вязание на заказ</a>
-          </li>
-        </ul>
-        <a class="hidden-s" href="#">Поиск</a>
-        <a class="hidden-s" href="#">Корзина: пока пуста</a>
+        <button class="page-menu__toggle" type="button">Иконка меню</button>
+        <nav class="page-menu">
+          <ul class="page-menu__list">
+            <li class="page-menu__list-item">
+              <a href="catalog.html" title="Каталог товаров">Каталог товаров</a>
+            </li>
+            <li class="page-menu__list-item">
+              <a href="form.html" title="Контакты">Вязание на заказ</a>
+            </li>
+          </ul>
+          <!-- submenu -->
+          <ul class="page-sub-menu__list">
+            <li class="page-sub-menu__list-item">
+              <a class="page-sub-menu__search-icon" href="#" title="Поиск по сайту">Поиск по сайту</a>
+            </li>
+            <li class="page-sub-menu__list-item">
+              <a class="page-sub-menu__basket-icon" href="#" title="Перейти в корзину">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 <!--    MAIN CONTAINER-->
@@ -33,13 +40,6 @@
       <!-- inner title -->
       <section class="inner-header">
         <div class="inner-header__wrapper">
-          <div class="inner-header__submenu hidden-s">
-            <div>
-              <a href="#">Новые поступления</a>
-              <a href="#">Распродажа</a>
-            </div>
-            <p>Бесплатная доставка по России</p>
-          </div>
           <h1 class="inner-header__title">Каталог товаров</h1>
         </div>
       </section>
@@ -48,9 +48,9 @@
         <div class="inner-list__wrapper">
           <ul class="inner-list__list">
             <li class="inner-list__item">
-              <a class="inner-list__item-photo" href="#" title="Зайчик-попрыгайчик">
-                <img src="./img/item-photo/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
-              </a>
+              <div class="inner-list__item-photo">
+                <img class="inner-item-img" src="./img/item-photo/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+              </div>
               <div class="inner-list__item-content">
                 <p class="inner-list__title">Зайчик-попрыгайчик</p>
                 <p class="inner-list__description">Рост 30 см, вес 200 г</p>
@@ -62,9 +62,9 @@
               </div>
             </li>
             <li class="inner-list__item">
-              <a class="inner-list__item-photo" href="#" title="Корзинка для белья">
-                <img src="./img/item-photo/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
-              </a>
+              <div class="inner-list__item-photo">
+                <img class="inner-item-img" src="./img/item-photo/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+              </div>
               <div class="inner-list__item-content">
                 <p class="inner-list__title">Корзинка для белья</p>
                 <p class="inner-list__description">Диаметр 15 см, высота 10 см</p>
@@ -76,9 +76,9 @@
               </div>
             </li>
             <li class="inner-list__item">
-              <a class="inner-list__item-photo"href="#" title="Большая корзинка для игрушек">
-                <img src="./img/item-photo/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
-              </a>
+              <div class="inner-list__item-photo">
+                <img class="inner-list__item-img" src="./img/item-photo/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+              </div>
               <div class="inner-list__item-content">
                 <p class="inner-list__title">Большая корзинка для игрушек</p>
                 <p class="inner-list__description">Диаметр 30 см, высота 30 см</p>
@@ -90,16 +90,16 @@
               </div>
             </li>
             <!-- video -->
-            <li class="inner-list__item inner-list__item--video">
-              <header class="inner-list__video-header">
-                <img class="inner-list_video-camera" src="./img/icon-video.svg" width="32" height="32">
+            <li class="inner-list__item inner-list__item-video">
+              <div class="inner-list__video-header">
+                <div class="inner-list__camera-icon"></div>
                 <p class="inner-list__title">Процесс производства</p>
-              </header>
-              <a href="#" title="Процесс производства">
-                <div class="inner-list_video-cover">
-                <img src="./img/video-mobile@1x.jpg" width="260" height="195">
-                </div>
-              </a>
+              </div>
+              <div class="inner-list__item-photo inner-list_video-cover">
+                <a href="#" title="Процесс производства">
+                  <img src="./img/video-mobile@1x.jpg" width="260" height="195">
+                </a>
+              </div>
               <div class="inner-list__item-content">
                 <p class="inner-list__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
                 <a class="btn inner-list__btn" href="#" title="Сделать заказ">Сделать заказ</a>
@@ -185,5 +185,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.page-menu');
+      var navToggle = document.querySelector('.page-menu__toggle');
+
+      navMain.classList.remove('page-menu--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('page-menu--closed')) {
+          navMain.classList.remove('page-menu--closed');
+          navMain.classList.add('page-menu--open');
+        } else {
+          navMain.classList.add('page-menu--closed');
+          navMain.classList.remove('page-menu--open');
+        }
+      });
+    </script>
   </body>
 </html>
