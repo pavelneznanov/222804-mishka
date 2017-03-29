@@ -8,32 +8,36 @@
   </head>
   <body>
 <!--    HEADER CONTAINER-->
-    <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html" title="На главную">
-          <img src="./img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
-        </a>
-        <ul class="page-menu hidden-s hidden-m">
-          <li class="page-menu__burger-icon">
-            <a href="#" title="Меню">Иконка меню</a>
+    <header class="nav">
+        <div class="nav__logo"></div>
+        <button class="nav__toggle" type="button">Иконка меню</button>
+        <!-- main navigation-->
+        <ul class="nav-main nav-main--tablet">
+          <li class="nav__main-item">
+            <a class="nav__main-link" href="catalog.html" title="Каталог товаров">Каталог товаров</a>
           </li>
-          <li class="page-menu__item hidden-s">
-            <a href="catalog.html" title="Каталог">Каталог товаров</a>
-          </li>
-          <li class="page-menu__item hidden-s">
-            <a href="form.html" title="Контакты">Вязание на заказ</a>
+          <li class="nav__main-item">
+            <a class="nav__main-link" href="form.html" title="Контакты">Вязание на заказ</a>
           </li>
         </ul>
-        <a class="hidden-s" href="#">Поиск</a>
-        <a class="hidden-s" href="#">Корзина: пока пуста</a>
-      </div>
+        <!-- sub navigation-->
+        <div class="nav-submenu">
+          <a class="nav__submenu-link nav__search-icon" href="catalog.html" title="Поиск по сайту">
+            <span class="hidden-m hidden-l">Поиск по сайту</span></a>
+          <a class="nav__submenu-link nav__basket-icon" href="form.html" title="Корзина: пока пуста">Корзина: пока пуста</a>
+        </div>
+        <div class="nav-other">
+          <a class="nav__other-link hidden-s hidden-m" href="#" title="Новые поступления">Новые поступления</a>
+          <a class="nav__other-link hidden-s hidden-m" href="#" title="Распродажа">Распродажа</a>
+        </div>
+        <p class="nav-delivery hidden-s">Бесплатная доставка по России</p>
     </header>
 <!--    MAIN CONTAINER-->
     <main class="page-content">
+<!--
       <section class="index-header">
         <div class="index-header__wrapper">
           <h1 class="index-header__title">Милые штуки ручной работы для дома</h1>
-          <!-- bottom categories-->
           <ul class="index-header__category">
             <li class="index-header__category-item">
               <p class="index-header__category-title">Предметы интерьера</p>
@@ -46,6 +50,7 @@
           </ul>
         </div>
       </section>
+-->
       <!-- week-product section -->
       <section class="week-product">
         <div class="week-product__wrapper">
@@ -243,5 +248,28 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.nav-main');
+      var navSub = document.querySelector('.nav-submenu');
+      var navToggle = document.querySelector('.nav__toggle');
+
+      navMain.classList.remove('nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('nav-close')) {
+          navMain.classList.remove('nav-close');
+          navMain.classList.add('nav-open');
+          navSub.classList.remove('nav-close');
+          navSub.classList.add('nav-open');
+          navToggle.classList.add('nav__toggle--close');
+        } else {
+          navMain.classList.add('nav-close');
+          navMain.classList.remove('nav-open');
+          navSub.classList.add('nav-close');
+          navSub.classList.remove('nav-open');
+          navToggle.classList.remove('nav__toggle--close');
+        }
+      });
+    </script>
   </body>
 </html>
