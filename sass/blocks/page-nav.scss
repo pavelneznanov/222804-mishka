@@ -13,7 +13,7 @@
   display: block;
   width: 86px;
   height: 35px;
-  background-image: url("../img/logo-mobile.svg");
+  background-image: url("../img/logo/logo-mobile.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   align-self: center;
@@ -193,7 +193,7 @@
     z-index: 10;
     width: 112px;
     height: 46px;
-    background-image: url("../img/logo-tablets.svg");
+    background-image: url("../img/logo/logo-tablets.svg");
   }
   .nav__toggle {
     display: none;
@@ -248,7 +248,7 @@
     padding: 0;
     width: 148px;
     height: 90px;
-    background-image: url("../img/logo-desktop.svg");
+    background-image: url("../img/logo/logo-desktop.svg");
   }
   .nav-main--tablet {
     order: -1;
