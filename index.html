@@ -34,52 +34,54 @@
     </header>
 <!--    MAIN CONTAINER-->
     <main class="page-content">
-<!--
+      <!-- index header -->
       <section class="index-header">
         <div class="index-header__wrapper">
           <h1 class="index-header__title">Милые штуки ручной работы для дома</h1>
-          <ul class="index-header__category">
-            <li class="index-header__category-item">
-              <p class="index-header__category-title">Предметы интерьера</p>
+          <div class="index-header__category">
+            <div class="index-header__category-item">
+              <p class="index-header__category-title">Предметы <br>интерьера</p>
               <img src="./img/icon-interior.svg" width="41" height="63" alt="Предметы интерьера">
-            </li>
-            <li class="index-header__category-item">
-              <p class="index-header__category-title">Детские игрушки</p>
+            </div>
+            <div class="index-header__category-item">
+              <p class="index-header__category-title">Детские <br>игрушки</p>
               <img src="./img/icon-toy.svg" width="60" height="60"  alt="Детские игрушки">
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
--->
       <!-- week-product section -->
-<!--
       <section class="week-product">
         <div class="week-product__wrapper">
-          <header>
+          <header class="week-product__header">
             <h2 class="week-product__main-title">Вязаные корзинки</h2>
             <h3 class="week-product__sub-title">Товар недели</h3>
           </header>
-          <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="week-product__table">
-            <tr>
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>
+          <div class="week-product__content">
+            <p class="week-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="week-product__table">
+              <col width="100" valign="top">
+              <tr>
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr>
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+          </div>
           <img class="week-product__item-photo" src="./img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Пряжа">
-          <p class="week-product_price">Цена: 990 руб.</p>
-          <a class="btn week-product_btn" href="#" title="Заказать">Заказать</a>
+          <footer class="week-product__footer">
+            <p class="week-product_price">Цена: 990 руб.</p>
+            <a class="btn week-product_btn" href="#" title="Заказать">Заказать</a>
+          </footer>
         </div>
       </section>
--->
       <!-- separator -->
       <section class="page-separator"></section>
       <!-- about us section -->
@@ -157,31 +159,33 @@
       <!-- separator -->
       <section class="page-separator"></section>
       <!-- contacts section -->
-<!--
       <section class="contacts">
         <div class="contacts__wrapper">
-          <header>
-            <h3 class="contacts__title">Контакты</h3>
-          </header>
-          <table class="contacts__table">
-            <tr>
-              <td>e-mail:</td>
-              <td><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-            </tr>
-            <tr>
-              <td>адрес:</td>
-              <td>г. Санкт-Петербург,<br>
-                  ул. Большая Конюшенная,<br>
-                  д. 19/8, офис 101<br>
-              </td>
-            </tr>
-          </table>
+          <h3 class="contacts__title">
+            Контакты
+            <span class="contacts__flag-icon"></span>
+          </h3>
+          <div class="contacts__data">
+            <div class="contacts__list">
+              <div class="contacts__list-label">e-mail:</div>
+              <p>
+                <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </p>
+            </div>
+            <div class="contacts__list">
+              <div class="contacts__list-label">адрес:</div>
+              <p>г. Санкт-Петербург,<br>
+                ул. Большая Конюшенная,<br>
+                д. 19/8, офис 101</p>
+            </div>
+          </div>
           <div class="contacts__map">
           </div>
+          <div class="contacts__footer">
             <a class="btn contacts__btn" href="#" title="Написать нам">Напиште нам</a>
+          </div>
         </div>
       </section>
--->
     </main>
 <!--    FOOTER CONTAINER-->
     <footer class="page-footer">
