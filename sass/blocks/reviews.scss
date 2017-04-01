@@ -76,7 +76,7 @@
 
 @media screen and (min-width: $tablet-width) {
   .reviews {
-    background-image: url("../img/review@1x.jpg");
+    background-image: url('../img/review@1x.jpg');
     background-position: left top;
     background-repeat: no-repeat;
     margin-bottom: 70px;
@@ -118,12 +118,12 @@
   }
 }
 
-//@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
-//  .reviews {
-//    background: url(../img/review@2x.jpg) no-repeat;
-//    background-size: 350px auto;
-//  }
-//}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .reviews {
+    background: url('../img/review@2x.jpg') no-repeat;
+    background-size: 350px auto;
+  }
+}
 
 @media screen and (min-width: $desktop-width) {
   .reviews {
@@ -149,9 +149,9 @@
   }
 }
 
-//@media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 1.5dppx) {
-//  .reviews {
-//    background: url(../img/review@2x.jpg) no-repeat;
-//    background-size: 350px auto;
-//  }
-//}
+@media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 1.5dppx) {
+  .reviews {
+    background: url('../img/review@2x.jpg') no-repeat;
+    background-size: 350px auto;
+  }
+}

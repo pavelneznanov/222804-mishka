@@ -46,7 +46,11 @@
           <ul class="inner-list__list">
             <li class="inner-list__item">
               <div class="inner-list__item-photo">
-                <img class="inner-item-img" src="./img/item-photo/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+                <picture class="inner-list__item-img">
+                    <source media="(min-width: 1150px)" srcset="./img/item-photo/photo-1-desktop@1x.jpg 1x, img/item-photo/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/item-photo/photo-1-tablet@1x.jpg 1x, img/item-photo/photo-1-mobile@2x.jpg 2x">
+                    <img class="inner-list__item-img" src="./img/item-photo/photo-1-mobile@1x.jpg" srcset="./img/item-photo/photo-1-mobile@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик">
+                </picture>
               </div>
               <div class="inner-list__item-content">
                 <p class="inner-list__title">Зайчик-попрыгайчик</p>
@@ -60,7 +64,11 @@
             </li>
             <li class="inner-list__item">
               <div class="inner-list__item-photo">
-                <img class="inner-item-img" src="./img/item-photo/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+                <picture class="inner-list__item-img">
+                    <source media="(min-width: 1150px)" srcset="./img/item-photo/photo-2-desktop@1x.jpg 1x, img/item-photo/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/item-photo/photo-2-tablet@1x.jpg 1x, img/item-photo/photo-2-mobile@2x.jpg 2x">
+                    <img class="inner-list__item-img" src="./img/item-photo/photo-2-mobile@1x.jpg" srcset="./img/item-photo/photo-2-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
+                </picture>
               </div>
               <div class="inner-list__item-content">
                 <p class="inner-list__title">Корзинка для белья</p>
@@ -74,7 +82,11 @@
             </li>
             <li class="inner-list__item">
               <div class="inner-list__item-photo">
-                <img class="inner-list__item-img" src="./img/item-photo/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+                <picture class="inner-list__item-img">
+                    <source media="(min-width: 1150px)" srcset="./img/item-photo/photo-3-desktop@1x.jpg 1x, img/item-photo/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/item-photo/photo-3-tablet@1x.jpg 1x, img/item-photo/photo-3-mobile@2x.jpg 2x">
+                    <img class="inner-list__item-img" src="./img/item-photo/photo-3-mobile@1x.jpg" srcset="./img/item-photo/photo-3-mobile@2x.jpg 2x" width="260" height="195" alt="Большая корзинка для игрушек">
+                </picture>
               </div>
               <div class="inner-list__item-content">
                 <p class="inner-list__title">Большая корзинка для игрушек</p>
@@ -94,7 +106,11 @@
               </div>
               <div class="inner-list__item-photo inner-list_video-cover">
                 <a href="#" title="Процесс производства">
-                  <img src="./img/video-mobile@1x.jpg" width="260" height="195">
+                  <picture>
+                      <source media="(min-width: 1150px)" srcset="/img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                      <img src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" width="260" height="195" alt="Видео: процесс производства">
+                  </picture>
                 </a>
               </div>
               <div class="inner-list__item-content">

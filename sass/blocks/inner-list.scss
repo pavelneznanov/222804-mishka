@@ -253,6 +253,9 @@
     width: 316px;
     height: 462px;
   }
+  .inner-list__item-photo img {
+    background-position: 50% 50%;
+  }
   .inner-list__item {
     flex-direction: column;
   }
