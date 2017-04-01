@@ -7,20 +7,147 @@
 
 .week-product__wrapper {
   width: 100%;
-  padding: 120px 30px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.week-product__main-title {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.week-product__sub-title {
+  color: #63d1bb;
+  padding-bottom: 30px;
+  font-size: 17px;
+}
+
+.week-product__text {
+  font-size: 15px;
+  line-height: 24px;
+  color: #444;
+  padding-bottom: 30px;
+}
+
+.week-product__item-photo {
+  padding-bottom: 30px;
+  width: 100%;
+  height: 315px;
+}
+
+.week-product_price {
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: $font-bold;
+  color: #444;
+  font-size: 17px;
+}
+
+.week-product_btn {
+  margin-bottom: 40px;
+}
+
+.week-product__table {
+  font-size: 15px;
+  color: #444;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.week-product__table tr {
+  height: 40px;
+  border-bottom: 1px solid #ececec;
+}
+
+.week-product__table td {
+  vertical-align: middle;
+//  margin-left: 20px;
 }
 
 @media screen and (min-width: $tablet-width) {
   .week-product__wrapper {
     width: 668px;
-    padding: 120px 50px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  .week-product__main-title {
+    font-size: 43px;
+  }
+  .week-product__header {
+    display: flex;
+    justify-content: space-between;
+        width: 100%;
+    order: -1;
+  }
+  .week-product__sub-title {
+    width: 100px;
+    text-align: center;
+  }
+  .week-product__table {
+    width: 290px;
+  }
+  .week-product_btn {
+    width: 290px;
+  }
+  .week-product__item-photo {
+    width: 333px;
+    height: 404px;
+    margin-left: auto;
+    order: -1;
+  }
+  .week-product__text {
+    font-size: 17px;
+    line-height: 30px;
+    width: 290px;
+  }
+  .week-product_price {
+//    order: -1;
+    width: 290px;
+  }
+  .week-product__footer {
+//    order: -1;
+    margin-right: auto;
+    margin-top: -126px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .week-product__wrapper {
     width: 1050px;
-    padding: 120px 50px;
-    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .week-product__header {
+    flex-direction: row-reverse;
+  }
+  .week-product__main-title {
+    font-size: 53px;
+    width: 100%;
+    z-index: 10;
+  }
+  .week-product__item-photo {
+    width: 525px;
+    height: 636px;
+    margin-top: -120px;
+  }
+  .week-product__content {
+    padding-left: 175px;
+  }
+  .week-product__footer {
+    padding-left: 175px;
+  }
+  .week-product__sub-title {
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
+
+
+
+
+

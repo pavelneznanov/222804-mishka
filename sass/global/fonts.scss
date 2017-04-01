@@ -15,12 +15,12 @@
 }
 
 body {
-  font-family: 'OpenSansRegular', Arial, sans-serif;
+  font-family: $font-regular;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'OpenSansBold', Arial, sans-serif;
+  font-family: $font-bold;
 }
 
 h1 {
@@ -37,6 +37,10 @@ h3 {
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+legend {
+  font-family: $font-bold;
 }
 
 p {
