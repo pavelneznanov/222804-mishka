@@ -94,7 +94,7 @@ input[type="email"] {
   width: 100%;
   font-size: 17px;
   color: #444444;
-  font-family: 'OpenSans', Arial, sans-serif;
+  font-family: "OpenSansRegular", Arial, sans-serif;
   outline: none; }
 
 ::-webkit-input-placeholder {
@@ -124,7 +124,7 @@ textarea {
   height: 140px;
   font-size: 17px;
   color: #444444;
-  font-family: 'OpenSans', Arial, sans-serif;
+  font-family: "OpenSansRegular", Arial, sans-serif;
   outline: none;
   resize: none;
   display: block;
