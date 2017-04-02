@@ -55,19 +55,29 @@
   border: 1px solid #ececec;
   flex-grow: 1;
   height: 50px;
+  background-size: 50px 26px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .reviews__left-arrow {
   border-right: none;
+  background-image: url('../img/icon-left-arrow.svg');
+}
+
+.reviews__right-arrow {
+  background-image: url('../img/icon-right-arrow.svg');
 }
 
 .reviews__left-arrow:hover,
 .reviews__right-arrow:hover {
   color: #666666;
+  opacity: 0.6;
 }
 
 .reviews__left-arrow:active,
 .reviews__right-arrow:active {
   color: #b2b2b2;
+  opacity: 0.3;
 }
 
 .reviews__btn {

@@ -58,7 +58,7 @@
                 <hr>
                 <div class="inner-list__item-footer">
                   <p class="inner-list__price">1 200 руб.</p>
-                  <a class="inner-list__card-icon" href="#" title="Добавить в корзину"></a>
+                  <a class="inner-list__card-icon" href="#" title="Добавить в корзину" onclick="document.getElementById('modal-cart').style.display = 'block'; return false;"></a>
                 </div>
               </div>
             </li>
@@ -76,7 +76,7 @@
                 <hr>
                 <div class="inner-list__item-footer">
                   <p class="inner-list__price">690 руб.</p>
-                  <a class="inner-list__card-icon" href="#" title="Добавить в корзину"></a>
+                  <a class="inner-list__card-icon" href="#" title="Добавить в корзину" onclick="document.getElementById('modal-cart').style.display = 'block'; return false;"></a>
                 </div>
               </div>
             </li>
@@ -94,7 +94,7 @@
                 <hr>
                 <div class="inner-list__item-footer">
                   <p class="inner-list__price">1 500 руб.</p>
-                  <a class="inner-list__card-icon" href="#" title="Добавить в корзину"></a>
+                  <a class="inner-list__card-icon" href="#" title="Добавить в корзину" onclick="document.getElementById('modal-cart').style.display = 'block'; return false;"></a>
                 </div>
               </div>
             </li>
@@ -115,12 +115,29 @@
               </div>
               <div class="inner-list__item-content">
                 <p class="inner-list__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-                <a class="btn inner-list__btn" href="#" title="Сделать заказ">Сделать заказ</a>
+                <a class="btn inner-list__btn" href="form.html" title="Сделать заказ">Сделать заказ</a>
               </div>
             </li>
           </ul>
         </div>
       </section>
+      <!-- Modal cart -->
+      <div>
+        <div id="modal-cart" class="modal-cart">
+          <div class="modal-cart__wrapper">
+            <div class="modal-cart__body" style="text-align: center;">
+              <p class="modal-cart__title">Добавить в корзину</p>
+              <p class="modal-cart__subtitle">Выберите размер:</p>
+              <div class="modal-cart__size-list">
+                <div class="modal-cart__size-list-item">S</div>
+                <div class="modal-cart__size-list-item">M</div>
+                <div class="modal-cart__size-list-item">L</div>
+              </div>
+              <a href="#close" class="btn modal-cart__close" onclick="document.getElementById('modal-cart').style.display = 'none'; return false;">Добавить</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 <!--    FOOTER CONTAINER-->
     <footer class="page-footer">

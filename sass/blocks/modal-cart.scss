@@ -1,0 +1,107 @@
+/* Modal Block — Add to card */
+
+
+.display-block {
+  display: block; /*This will show the modal*/
+}
+
+.modal-cart {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: none; /*Automatically hides modal, its normal state*/
+}
+
+.modal-cart__wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: table;
+  width: 566px;
+  /*crude IE fix, IE will not vertically align without breaking a few eggs*/
+  max-width: 2000px;
+  margin: auto;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.modal-cart__body {
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.modal-cart__close {
+  margin-bottom: 45px;
+  color: #fff;
+  background-color: #63d1bb;
+  border: 2px solid #63d1bb;
+}
+
+.modal-cart__close:hover {
+  background-color: #63d1bb;
+  border: 2px solid #63d1bb;
+}
+
+.modal-cart__close:active {
+  color: #8be2d0;
+}
+
+.modal-cart__title {
+  font-family: $font-bold;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+.modal-cart__subtitle {
+  font-family: $font-regular;
+  font-size: 17px;
+  color: #444;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.modal-cart__size-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.modal-cart__size-list-item {
+  font-family: $font-bold;
+  font-size: 17px;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ececec;
+  height: 50px;
+  width: 110px;
+}
+
+.modal-cart__size-list-item:hover {
+  border: 2px solid #c7c7c7;
+  cursor: pointer;
+}
+
+.modal-cart__size-list-item:active,
+.modal-cart__size-list-item:target,
+.modal-cart__size-list-item:focus {
+  border: 2px solid #62d1ba;
+}
+
+

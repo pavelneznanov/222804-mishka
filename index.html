@@ -82,7 +82,7 @@
           </picture>
           <footer class="week-product__footer">
             <p class="week-product_price">Цена: 990 руб.</p>
-            <a class="btn week-product_btn" href="#" title="Заказать">Заказать</a>
+            <a class="btn week-product_btn" href="#modal" title="Заказать" onclick="document.getElementById('modal-cart').style.display = 'block'; return false;">Заказать</a>
           </footer>
         </div>
       </section>
@@ -149,12 +149,8 @@
               <p class="reviews__item-login">@misssssiskras</p>
             </div>
             <div class="reviews__arrows">
-              <a class="reviews__left-arrow" href="#">
-                <span class="">←</span>
-              </a>
-              <a class="reviews__right-arrow" href="#">
-                <span class="">→</span>
-              </a>
+              <a class="reviews__left-arrow" href="#"></a>
+              <a class="reviews__right-arrow" href="#"></a>
             </div>
           </div>
           <a class="btn reviews__btn" href="#" title="Написать отзыв">Написать</a>
@@ -184,13 +180,30 @@
             </div>
           </div>
           <div class="contacts__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7866409812661!2d30.319468829532582!3d59.9356824657998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f89dee259%3A0x35cdba9c7f3d2206!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDIwLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1490796546429" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7866409812661!2d30.319468829532582!3d59.9356824657998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f89dee259%3A0x35cdba9c7f3d2206!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDIwLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1490796546429" style="border:0" allowfullscreen wmode="Opaque"></iframe>
           </div>
           <div class="contacts__footer">
             <a class="btn contacts__btn" href="#" title="Написать нам">Напиште нам</a>
           </div>
         </div>
       </section>
+      <!-- Modal cart -->
+      <div>
+        <div id="modal-cart" class="modal-cart">
+          <div class="modal-cart__wrapper">
+            <div class="modal-cart__body" style="text-align: center;">
+              <p class="modal-cart__title">Добавить в корзину</p>
+              <p class="modal-cart__subtitle">Выберите размер:</p>
+              <div class="modal-cart__size-list">
+                <div class="modal-cart__size-list-item">S</div>
+                <div class="modal-cart__size-list-item">M</div>
+                <div class="modal-cart__size-list-item">L</div>
+              </div>
+              <a href="#close" class="btn modal-cart__close" onclick="document.getElementById('modal-cart').style.display = 'none'; return false;">Добавить</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 <!--    FOOTER CONTAINER-->
     <footer class="page-footer">
