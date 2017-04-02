@@ -94,9 +94,17 @@
   }
   .index-header__category {
     display: flex;
+    height: 105px;
   }
   .index-header__category-item {
     width: 100%;
+    align-self: flex-end;
+  }
+  .index-header__category-item:hover {
+   height: 105px;
+  }
+  .index-header__category-item:active {
+   color: #8dd5c9;
   }
 }
 

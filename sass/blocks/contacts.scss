@@ -28,7 +28,11 @@
 }
 
 .contacts__list a:hover {
-  border: none;
+  color: #62d1ba;
+}
+
+.contacts__list a:active {
+  opacity: 0.3;
 }
 
 .contacts__list {
@@ -48,7 +52,6 @@
 
 .contacts__map {
   height: 450px;
-//  background-image: url('../img/map-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 40px;
