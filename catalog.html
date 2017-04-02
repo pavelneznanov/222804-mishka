@@ -12,7 +12,7 @@
         <a class="nav__logo" href="index.html"></a>
         <button class="nav__toggle" type="button">Иконка меню</button>
         <!-- main navigation-->
-        <ul class="nav-main nav-main--tablet">
+        <ul class="nav-main nav-main--tablet nav-close nav-nojs">
           <li class="nav__main-item">
             <a class="nav__main-link" href="catalog.html" title="Каталог товаров">Каталог товаров</a>
           </li>
@@ -21,7 +21,7 @@
           </li>
         </ul>
         <!-- sub navigation-->
-        <div class="nav-submenu">
+        <div class="nav-submenu nav-close nav-nojs">
           <a class="nav__submenu-link nav__search-icon" href="catalog.html" title="Поиск по сайту">
             <span class="hidden-m hidden-l">Поиск по сайту</span></a>
           <a class="nav__submenu-link nav__basket-icon" href="form.html" title="Корзина: пока пуста">Корзина: пока пуста</a>
@@ -46,7 +46,11 @@
           <ul class="inner-list__list">
             <li class="inner-list__item">
               <div class="inner-list__item-photo">
-                <img class="inner-item-img" src="./img/item-photo/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+                <picture class="inner-list__item-img">
+                    <source media="(min-width: 1150px)" srcset="./img/item-photo/photo-1-desktop@1x.jpg 1x, img/item-photo/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/item-photo/photo-1-tablet@1x.jpg 1x, img/item-photo/photo-1-mobile@2x.jpg 2x">
+                    <img class="inner-list__item-img" src="./img/item-photo/photo-1-mobile@1x.jpg" srcset="./img/item-photo/photo-1-mobile@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик">
+                </picture>
               </div>
               <div class="inner-list__item-content">
                 <p class="inner-list__title">Зайчик-попрыгайчик</p>
@@ -54,13 +58,17 @@
                 <hr>
                 <div class="inner-list__item-footer">
                   <p class="inner-list__price">1 200 руб.</p>
-                  <a class="inner-list__card-icon" href="#" title="Добавить в корзину"></a>
+                  <a class="inner-list__card-icon" href="#" title="Добавить в корзину" onclick="document.getElementById('modal-cart').style.display = 'block'; return false;"></a>
                 </div>
               </div>
             </li>
             <li class="inner-list__item">
               <div class="inner-list__item-photo">
-                <img class="inner-item-img" src="./img/item-photo/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+                <picture class="inner-list__item-img">
+                    <source media="(min-width: 1150px)" srcset="./img/item-photo/photo-2-desktop@1x.jpg 1x, img/item-photo/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/item-photo/photo-2-tablet@1x.jpg 1x, img/item-photo/photo-2-mobile@2x.jpg 2x">
+                    <img class="inner-list__item-img" src="./img/item-photo/photo-2-mobile@1x.jpg" srcset="./img/item-photo/photo-2-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
+                </picture>
               </div>
               <div class="inner-list__item-content">
                 <p class="inner-list__title">Корзинка для белья</p>
@@ -68,13 +76,17 @@
                 <hr>
                 <div class="inner-list__item-footer">
                   <p class="inner-list__price">690 руб.</p>
-                  <a class="inner-list__card-icon" href="#" title="Добавить в корзину"></a>
+                  <a class="inner-list__card-icon" href="#" title="Добавить в корзину" onclick="document.getElementById('modal-cart').style.display = 'block'; return false;"></a>
                 </div>
               </div>
             </li>
             <li class="inner-list__item">
               <div class="inner-list__item-photo">
-                <img class="inner-list__item-img" src="./img/item-photo/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+                <picture class="inner-list__item-img">
+                    <source media="(min-width: 1150px)" srcset="./img/item-photo/photo-3-desktop@1x.jpg 1x, img/item-photo/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/item-photo/photo-3-tablet@1x.jpg 1x, img/item-photo/photo-3-mobile@2x.jpg 2x">
+                    <img class="inner-list__item-img" src="./img/item-photo/photo-3-mobile@1x.jpg" srcset="./img/item-photo/photo-3-mobile@2x.jpg 2x" width="260" height="195" alt="Большая корзинка для игрушек">
+                </picture>
               </div>
               <div class="inner-list__item-content">
                 <p class="inner-list__title">Большая корзинка для игрушек</p>
@@ -82,7 +94,7 @@
                 <hr>
                 <div class="inner-list__item-footer">
                   <p class="inner-list__price">1 500 руб.</p>
-                  <a class="inner-list__card-icon" href="#" title="Добавить в корзину"></a>
+                  <a class="inner-list__card-icon" href="#" title="Добавить в корзину" onclick="document.getElementById('modal-cart').style.display = 'block'; return false;"></a>
                 </div>
               </div>
             </li>
@@ -94,17 +106,38 @@
               </div>
               <div class="inner-list__item-photo inner-list_video-cover">
                 <a href="#" title="Процесс производства">
-                  <img src="./img/video-mobile@1x.jpg" width="260" height="195">
+                  <picture>
+                      <source media="(min-width: 1150px)" srcset="/img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                      <img src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" width="260" height="195" alt="Видео: процесс производства">
+                  </picture>
                 </a>
               </div>
               <div class="inner-list__item-content">
                 <p class="inner-list__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-                <a class="btn inner-list__btn" href="#" title="Сделать заказ">Сделать заказ</a>
+                <a class="btn inner-list__btn" href="form.html" title="Сделать заказ">Сделать заказ</a>
               </div>
             </li>
           </ul>
         </div>
       </section>
+      <!-- Modal cart -->
+      <div>
+        <div id="modal-cart" class="modal-cart">
+          <div class="modal-cart__wrapper">
+            <div class="modal-cart__body" style="text-align: center;">
+              <p class="modal-cart__title">Добавить в корзину</p>
+              <p class="modal-cart__subtitle">Выберите размер:</p>
+              <div class="modal-cart__size-list">
+                <div class="modal-cart__size-list-item">S</div>
+                <div class="modal-cart__size-list-item">M</div>
+                <div class="modal-cart__size-list-item">L</div>
+              </div>
+              <a href="#close" class="btn modal-cart__close" onclick="document.getElementById('modal-cart').style.display = 'none'; return false;">Добавить</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 <!--    FOOTER CONTAINER-->
     <footer class="page-footer">
@@ -187,7 +220,8 @@
       var navSub = document.querySelector('.nav-submenu');
       var navToggle = document.querySelector('.nav__toggle');
 
-      navMain.classList.remove('nav--nojs');
+      navMain.classList.remove('nav-nojs');
+      navSub.classList.remove('nav-nojs');
 
       navToggle.addEventListener('click', function() {
         if (navMain.classList.contains('nav-close')) {
