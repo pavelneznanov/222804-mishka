@@ -31,7 +31,7 @@
     height: 225px;
   }
   .inner-header:after {
-    background-image: url('../img/inner-wave.png');
+    background-image: url("../img/inner-wave.png");
     background-repeat: repeat-x;
     background-size: 40px;
     height: 9px;
@@ -51,7 +51,7 @@
     height: 250px;
   }
   .inner-header:after {
-    background-image: url('../img/inner-wave.png');
+    background-image: url("../img/inner-wave.png");
     background-repeat: repeat-x;
   }
   .inner-header__wrapper {

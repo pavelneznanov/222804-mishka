@@ -61,11 +61,11 @@
 }
 .reviews__left-arrow {
   border-right: none;
-  background-image: url('../img/icon-left-arrow.svg');
+  background-image: url("../img/icon-left-arrow.svg");
 }
 
 .reviews__right-arrow {
-  background-image: url('../img/icon-right-arrow.svg');
+  background-image: url("../img/icon-right-arrow.svg");
 }
 
 .reviews__left-arrow:hover,
@@ -84,7 +84,6 @@
 .reviews__btn {
   margin-bottom: 40px;
 }
-
 
 /* Slider */
 
@@ -117,7 +116,7 @@
 @media screen and (min-width: $tablet-width) {
   .reviews {
     display: flex;
-    background-image: url('../img/review@1x.jpg');
+    background-image: url("../img/review@1x.jpg");
     background-position: left top;
     background-repeat: no-repeat;
     margin-bottom: 70px;
@@ -170,7 +169,7 @@
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .reviews {
-    background: url('../img/review@2x.jpg') no-repeat;
+    background: url("../img/review@2x.jpg") no-repeat;
     background-size: 350px auto;
   }
 }
@@ -205,7 +204,7 @@
 
 @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 1.5dppx) {
   .reviews {
-    background: url('../img/review@2x.jpg') no-repeat;
+    background: url("../img/review@2x.jpg") no-repeat;
     background-size: 350px auto;
   }
 }
