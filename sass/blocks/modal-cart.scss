@@ -24,7 +24,7 @@
   left: 0;
   right: 0;
   display: table;
-  width: 566px;
+  width: 100%;
   /*crude IE fix, IE will not vertically align without breaking a few eggs*/
   max-width: 2000px;
   margin: auto;
@@ -36,8 +36,8 @@
   display: table-cell;
   height: 100%;
   width: 100%;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: #fff;
   vertical-align: middle;
 }
@@ -61,15 +61,17 @@
 .modal-cart__title {
   font-family: $font-bold;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 0 30px;
   text-transform: uppercase;
-  padding-top: 45px;
-  padding-bottom: 40px;
+  padding-top: 35px;
+  padding-bottom: 20px;
 }
 
 .modal-cart__subtitle {
   font-family: $font-regular;
-  font-size: 17px;
+  font-size: 15px;
   color: #444;
   text-align: center;
   padding-bottom: 30px;
@@ -90,7 +92,12 @@
   align-items: center;
   border: 2px solid #ececec;
   height: 50px;
-  width: 110px;
+  width: 100%;
+  margin-right: 8px;
+}
+
+.modal-cart__size-list-item:last-child {
+  margin-right: 0;
 }
 
 .modal-cart__size-list-item:hover {
@@ -102,6 +109,28 @@
 .modal-cart__size-list-item:target,
 .modal-cart__size-list-item:focus {
   border: 2px solid #62d1ba;
+}
+
+
+@media screen and (min-width: $tablet-width) {
+  .modal-cart__wrapper {
+    width: 566px;
+  }
+  .modal-cart__body {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .modal-cart__title {
+    font-size: 30px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .modal-cart__subtitle {
+    font-size: 17px;
+    padding-bottom: 30px;
+  }
 }
 
 

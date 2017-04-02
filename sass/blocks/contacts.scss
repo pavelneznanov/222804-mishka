@@ -53,6 +53,7 @@
 .contacts__map {
   height: 450px;
   background-repeat: no-repeat;
+  background-image: url('../img/map-mobile@1x.jpg');
   background-size: cover;
   margin-bottom: 40px;
 }
@@ -109,6 +110,7 @@
   }
   .contacts__map {
     margin-bottom: 50px;
+    background-image: url('../img/map-tablet@1x.jpg');
   }
   .contacts__btn {
     width: 230px;
@@ -143,7 +145,7 @@
     display: block;
     width: 47px;
     height: 81px;
-    background-image: url("../img/icon-flag.svg")
+    background-image: url('../img/icon-flag.svg');
   }
 }
 
@@ -188,6 +190,7 @@
     width: 525px;
     margin-left: auto;
     order: 1;
+    background-image: url('../img/map-desktop@1x.jpg');
   }
   .contacts__footer {
     order: -1;
