@@ -64,6 +64,10 @@
   vertical-align: middle;
 }
 
+.week-product__table-td {
+  width: 100px;
+}
+
 @media screen and (min-width: $tablet-width) {
   .week-product__wrapper {
     width: 668px;
