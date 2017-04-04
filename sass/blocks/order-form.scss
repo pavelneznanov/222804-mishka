@@ -261,9 +261,12 @@
   .order-form__form-color-bg .order-form__content {
     margin-right: 0;
     flex-basis: 875px;
+    padding-right: 130px;
   }
   .order-form__column-checkbox {
     flex-basis: 220px;
-    margin-right: 43px;
+  }
+  .order-form__form-color-bg {
+    height: 228px;
   }
 }

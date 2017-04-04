@@ -175,7 +175,7 @@
   }
   .contacts__map {
     width: 525px;
-    margin-left: auto;
+//    margin-left: auto; don't work in Safari
     order: 1;
     background-image: url("../img/map-desktop@1x.jpg");
   }
