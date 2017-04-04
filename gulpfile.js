@@ -114,6 +114,6 @@ gulp.task("serve", ['copy','style','script','images', 'svgmin'], function() {
 
 
 gulp.task("build", function(fn) {
-  run("clean", "copy", "style", "script", "images", "svgmin", "serve", fn);
+  run("clean", "copy", "style", "script", "images", "svgmin", fn);
 });
 

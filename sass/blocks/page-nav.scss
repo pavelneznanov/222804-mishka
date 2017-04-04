@@ -32,6 +32,7 @@
   width: 30px;
   height: 30px;
   background-image: url("../img/icon-menu-open.svg");
+  background-size: 20px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: none;
@@ -209,6 +210,7 @@
     width: auto;
     display: flex;
     align-self: flex-end;
+    margin-left: auto;
   }
   .nav__search-icon {
     border-left: 1px solid #ececec;
@@ -250,6 +252,7 @@
     width: 148px;
     height: 90px;
     background-image: url("../img/logo/logo-desktop.svg");
+    margin: 0 auto;
   }
   .nav-main--tablet {
     order: -1;

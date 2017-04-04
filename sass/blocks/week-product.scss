@@ -69,6 +69,9 @@
 }
 
 @media screen and (min-width: $tablet-width) {
+  .week-product {
+    display: block;
+  }
   .week-product__wrapper {
     width: 668px;
     margin: 0 auto;
@@ -118,6 +121,9 @@
 }
 
 @media screen and (min-width: $desktop-width) {
+  .week-product {
+    display: block;
+  }
   .week-product__wrapper {
     width: 1050px;
     padding-top: 100px;
